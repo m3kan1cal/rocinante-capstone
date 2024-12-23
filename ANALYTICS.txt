@@ -1,0 +1,121 @@
+Model Comparisons
+
+Model Type: random_forest
+
+Sample of Actual vs Predicted Values:
+------------------------------------
+ Sample Row # (from test set)    Actual  Predicted
+                        11402     $0.00      $0.44
+                        14316     $0.00      $0.44
+                        20634 $4,852.10  $4,906.41
+                        11373     $0.00      $0.44
+                         6593    $18.77     $21.89
+
+Value Ranges:
+Actual values range: $0.00 to $2,476,148.65
+Predicted values range: $0.44 to $2,613,475.62
+
+Model Type: lightgbm
+
+Sample of Actual vs Predicted Values:
+------------------------------------
+ Sample Row # (from test set)    Actual  Predicted
+                        11402     $0.00      $0.09
+                        14316     $0.00      $0.05
+                        20634 $4,852.10  $5,074.21
+                        11373     $0.00      $0.05
+                         6593    $18.77     $18.49
+
+Value Ranges:
+Actual values range: $0.00 to $2,476,148.65
+Predicted values range: $-39,671.18 to $3,107,806.24
+
+Model Type: linear
+
+Sample of Actual vs Predicted Values:
+------------------------------------
+ Sample Row # (from test set)    Actual  Predicted
+                        11402     $0.00      $2.26
+                        14316     $0.00      $6.30
+                        20634 $4,852.10  $4,847.10
+                        11373     $0.00      $7.71
+                         6593    $18.77     $15.85
+
+Value Ranges:
+Actual values range: $0.00 to $2,476,148.65
+Predicted values range: $-2,978.65 to $2,475,204.25
+
+Model Comparison Summary:
+------------------------
+
+RANDOM_FOREST MODEL:
+Best Parameters: {'max_depth': 10, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 100}
+Number of Selected Features: 33
+MAE: $244.78
+RMSE: $5,018.28
+R²: 0.997
+Mean Bias: $197.63
+% Over-predicted: 77.8%
+
+LIGHTGBM MODEL:
+Best Parameters: {'learning_rate': 0.1, 'max_depth': -1, 'n_estimators': 200, 'num_leaves': 100}
+Number of Selected Features: 33
+MAE: $1,083.70
+RMSE: $16,021.53
+R²: 0.971
+Mean Bias: $540.01
+% Over-predicted: 74.9%
+
+LINEAR MODEL:
+Best Parameters: {'fit_intercept': True, 'positive': False}
+Number of Selected Features: 33
+MAE: $37.14
+RMSE: $280.38
+R²: 1.000
+Mean Bias: $3.68
+% Over-predicted: 62.1%
+
+Model Type: random_forest
+
+Sample of Actual vs Predicted Values:
+------------------------------------
+ Sample Row # (from test set)    Actual  Predicted
+                        11402     $0.00      $0.44
+                        14316     $0.00      $0.44
+                        20634 $4,852.10  $4,906.41
+                        11373     $0.00      $0.44
+                         6593    $18.77     $21.89
+
+Value Ranges:
+Actual values range: $0.00 to $2,476,148.65
+Predicted values range: $0.44 to $2,613,475.62
+
+Model Type: lightgbm
+
+Sample of Actual vs Predicted Values:
+------------------------------------
+ Sample Row # (from test set)    Actual  Predicted
+                        11402     $0.00      $0.09
+                        14316     $0.00      $0.05
+                        20634 $4,852.10  $5,074.21
+                        11373     $0.00      $0.05
+                         6593    $18.77     $18.49
+
+Value Ranges:
+Actual values range: $0.00 to $2,476,148.65
+Predicted values range: $-39,671.18 to $3,107,806.24
+
+Model Type: linear
+
+Sample of Actual vs Predicted Values:
+------------------------------------
+ Sample Row # (from test set)    Actual  Predicted
+                        11402     $0.00      $2.26
+                        14316     $0.00      $6.30
+                        20634 $4,852.10  $4,847.10
+                        11373     $0.00      $7.71
+                         6593    $18.77     $15.85
+
+Value Ranges:
+Actual values range: $0.00 to $2,476,148.65
+Predicted values range: $-2,978.65 to $2,475,204.25
