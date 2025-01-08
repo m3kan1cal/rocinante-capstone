@@ -28,6 +28,10 @@ For this project, I built three models to forecast drug spend over the next 12-2
 
 ### Random Forest Model
 
+How it works:
+
+A Random Forest model is like asking 100 smart friends to predict next month's drug spending - but instead of just one friend making a guess based on all the information, each friend looks at different pieces of data (like member counts, spending patterns, etc.) before making their prediction. All their guesses are then averaged together to make one final prediction. Just like how a group guess is usually better than one person's guess, this makes Random Forest typically more accurate than simpler prediction methods.
+
 Performance:
 
 - MAE: $244.78 (predictions are off by $244.78 on average)
@@ -45,6 +49,10 @@ Key Findings:
 
 ### LightGBM Model
 
+How it works:
+
+LightGBM is like having a team of smart friends predict drug spending together, where each new prediction builds upon what was learned from previous predictions. Instead of everyone working independently like in Random Forest, each team member learns from the others' mistakes and focuses especially on the difficult cases that weren't predicted well before. This makes it both faster and often more accurate than simpler methods, particularly with large amounts of data.
+
 Performance:
 
 - MAE: $1,083.70 (predictions are off by $1,083.70 on average)
@@ -61,6 +69,10 @@ Key Findings:
 - Most complex feature relationships captured
 
 ### Linear Regression Model
+
+How it works:
+
+Linear regression is like drawing the simplest, most direct line through your historical drug spending data to predict future spending. It's similar to having a basic math formula where you plug in what you know (like member count, season, etc.) and get a prediction back. While it's not as sophisticated as other methods, its simplicity makes it easy to understand and explain - if X goes up by a certain amount, Y will go up by a proportional amount.
 
 Performance:
 
