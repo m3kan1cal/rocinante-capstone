@@ -30,11 +30,11 @@ For this project, I built three models to forecast drug spend over the next 12-2
 
 Performance:
 
-- MAE: $244.78
-- RMSE: $5,018.28
-- R²: 0.997
-- Mean Bias: $197.63
-- Over-prediction rate: 77.8%
+- MAE: $244.78 (predictions are off by $244.78 on average)
+- RMSE: $5,018.28 (predictions differ from the actual drug spend by about $5,018)
+- R²: 0.997 (means the model explains 99% of the variability in drug spend)
+- Mean Bias: $197.63 (indicates model consistently overpredicts by $197.63)
+- Over-prediction rate: 77.8% (model predicts higher than actual 77.8% of the time)
 
 Key Findings:
 
