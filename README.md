@@ -47,11 +47,11 @@ Key Findings:
 
 Performance:
 
-- MAE: $1,083.70
-- RMSE: $16,021.53
-- R²: 0.971
-- Mean Bias: $540.01
-- Over-prediction rate: 74.9%
+- MAE: $1,083.70 (predictions are off by $1,083.70 on average)
+- RMSE: $16,021.53 (predictions differ from the actual drug spend by about $16,021.53)
+- R²: 0.971 (means the model explains 97% of the variability in drug spend)
+- Mean Bias: $540.01 (indicates model consistently overpredicts by $540.01)
+- Over-prediction rate: 74.9% (model predicts higher than actual 74.9% of the time)
 
 Key Findings:
 
@@ -64,11 +64,11 @@ Key Findings:
 
 Performance:
 
-- MAE: $37.14
-- RMSE: $280.38
-- R²: 1.000
-- Mean Bias: $3.68
-- Over-prediction rate: 62.1%
+- MAE: $37.14 (predictions are off by $37.14 on average)
+- RMSE: $280.38 (predictions differ from the actual drug spend by about $280.38)
+- R²: 1.000 (means the model explains 100% of the variability in drug spend)
+- Mean Bias: $3.68 (indicates model consistently overpredicts by $3.68)
+- Over-prediction rate: 62.1% (model predicts higher than actual 62.1% of the time)
 
 Key Findings:
 
