@@ -153,6 +153,8 @@ Key Findings:
 
 1. Short-term Actions (0-3 months)
 
+    - Fine-tune SQL query and dataset
+    - Align on and identify missing dimensions
     - Deploy model in production environment
     - Create automated reporting dashboard
     - Train business users on interpretation
